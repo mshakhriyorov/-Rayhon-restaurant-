@@ -4,7 +4,7 @@
 body{
     color: #fff;
     font-size: 16px;
-    background-color: #61122f;
+    background-color: #7fbd42;
     font-family: 'Oxygen', sans-serif;
 }
 
@@ -13,7 +13,7 @@ body{
 
 
 #header-nav{
-    background-color: #f6b319;
+    background-color: #ffb300;
     border-radius: 0;
     border: 0;
 }
@@ -24,7 +24,11 @@ body{
     height: 150px;
     margin: 10px 15px 10px 0 ;
     border-radius: 50%;
-    border: 2px solid green;
+    border: 2px solid #7fbd42;
+}
+
+#logo-img:hover{
+    box-shadow: 0 0 3px  darkgreen;
 }
 
 header .navbar-header{
@@ -40,7 +44,7 @@ header .navbar-brand h1{
     font-size: 1.5em;
     text-transform: uppercase;
     font-weight: bold;
-    text-shadow: 1px 1px 1px #222;
+    text-shadow: 1px 1px 1px green;
     margin-top: 0;
     margin-bottom: 0;
     line-height: 0.75;
@@ -66,13 +70,22 @@ header .navbar-brand p{
 }
 
 #nav-list a{
-    color: #951C49;
+    color: green;
     text-align: center;
-    
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+#nav-list a.phone{
+    color: green;
+    text-align: center;
+    border-radius: 4%;
+    transition: .5s ease;
 }
 
 #nav-list a:hover{
-    background: #E7E7E7;
+    background: #fff;
+    color: #000;
 }
 
 #nav-list a span{
@@ -94,7 +107,7 @@ header .navbar-brand p{
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-    border: 1px solid #61122f;
+    border: 1px solid green;
 }
 
 .navbar-header button.navbar-toggle{
@@ -108,13 +121,13 @@ header .navbar-brand p{
     width: 100%;
     margin-bottom: 15px;
     position: relative;
-    border: 2px solid #3F0C1F;
+    border: 2px solid green;
     overflow: hidden;
 }
 
 
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover{
-    box-shadow: 0 1px 5px 1px #cccccc
+    box-shadow: 0 1px 5px 1px #fff
 }
 
 
@@ -138,6 +151,12 @@ header .navbar-brand p{
     text-transform: uppercase;
     background-color: #000;
     color: #fff;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+
+#menu-tile:hover span, #specials-tile:hover    span, #map-tile:hover span{
     opacity: .8;
 }
 
@@ -147,7 +166,7 @@ header .navbar-brand p{
 
 .category-tile {
     position: relative;
-    border: 2px solid #3F0C1F;
+    border: 2px solid green;
     overflow: hidden;
     width: 200px;
     height: 200px;
@@ -164,11 +183,16 @@ header .navbar-brand p{
     text-transform: uppercase;
     background-color: #000;
     color: #fff;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.category-tile:hover span{
     opacity: .8;
 }
 
 .category-tile:hover{
-    box-shadow: 0 1px 5px 1px #cccccc;
+    box-shadow: 0 1px 5px 1px #fff;
 }
 
 #menu-categories-title + div{
@@ -202,9 +226,23 @@ header .navbar-brand p{
 }
 
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-thumb{
+    background-color: green;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+
 .menu-item-photo{
     position: relative;
-    border: 2px solid #3F0C1F;
+    border: 2px solid green;
     overflow: hidden;
     padding: 0;
     margin-right: -15px;
@@ -283,8 +321,8 @@ h3.menu-item-title{
     .jumbotron{
         background: url('../images/1200.jpg') center center no-repeat;
         height: 675px;
-        box-shadow: 0 0 50px #3F0C1F;
-        border: 2px solid #3F0C1F;
+        box-shadow: 0 0 50px darkgreen;
+        border: 2px solid green;
     }
 }
 
@@ -299,8 +337,8 @@ h3.menu-item-title{
     .container .jumbotron{
         background: url('../images/990.jpg') center center no-repeat;
         height: 558px;
-        box-shadow: 0 0 50px #3F0C1F;
-        border: 2px solid #3F0C1F;
+        box-shadow: 0 0 50px darkgreen;
+        border: 2px solid green;
         padding: 0;
     }
 }
@@ -309,8 +347,8 @@ h3.menu-item-title{
     .container .jumbotron{
         background: url('../images/restaurant-768x768.jpg') center center no-repeat;
         height: 558px;
-        box-shadow: 0 0 50px #3F0C1F;
-        border: 2px solid #3F0C1F;
+        box-shadow: 0 0 50px darkgreen;
+        border: 2px solid green;
         padding: 0;
     }
 }
@@ -347,9 +385,9 @@ h3.menu-item-title{
         display: block;
         margin: 0 20px;
         padding: 10px;
-        border: 2px solid #fff;
+        border: 2px solid darkgreen;
         background-color: #f6b319;
-        color: #951c49;
+        color: green;
     }
 
     #xs-deliver{
@@ -375,8 +413,8 @@ h3.menu-item-title{
     .container  .jumbotron{
         margin-top: 30px;
         padding: 0;
-        box-shadow: 0 0 50px #3F0C1F;
-        border: 2px solid #3F0C1F;
+        box-shadow: 0 0 50px darkgreen;
+        border: 2px solid green;
     }
 
     .menu-item-photo{
@@ -449,17 +487,3 @@ h3.menu-item-title{
 
 
 
-/* @media (max-width: 768px) and (min-width:346px){
-    header .navbar-brand p{
-        font-size: 13px;
-        font-weight: 400;
-        color: tomato;
-        width: 100/12 * 4;
-    }
-
-    header .navbar-brand h1{
-        font-size: 14px;
-        width: 100/12 * 4;
-        
-    }
-} */
